@@ -38,6 +38,10 @@ assert(frontpath != None, "Front cover not found")
 assert(backpath != None, "Back cover not found")
 
 
+# Create output folder if not exists
+if not os.path.exists(OUTPUTPATH):
+    os.makedirs(OUTPUTPATH)
+
 # Begin renaming
 count = 0
 
